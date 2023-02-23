@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+
+.card {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  border-radius: 20px;
+  padding: 110px 10px 10px 10px;
+  position: relative;
+  transition-duration: 200ms;
+  background-color: white;
+}
+
+.card .content p {
+  color: #888888;
+   padding-top: 10px; 
+  font-size: 14px;
+}
+
+.img {
+  transition-duration: 200ms;
+  position: absolute;
+  width: 280px;
+  height: 150px;
+  left: 10px;
+  background: rgb(255, 0, 99);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 99, 1) 35%,
+    rgba(247, 32, 32, 1) 100%
+  );
+  top: -50px;
+  border-radius: 20px;
+  box-shadow: 1px 2px 3px #999999;
+}
+
+.card:hover .img {
+  transform: scale(1.2) translateX(-70px) translateY(60px);
+  width: 100px;
+  z-index: 0;
+  height: 100px;
+  border-radius: 50px;
+}
+.card:hover {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.card:hover h5 {
+  display: none;
+}
+.card:hover .content {
+  z-index: 6;
+}
+.card .content h5 {
+  float: right;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}

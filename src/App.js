@@ -24,9 +24,7 @@ function App() {
         </ul>
       </div>
 
-        <div className='reg'>
-          <Registration/>
-        </div>
+
         
 
       <Router>

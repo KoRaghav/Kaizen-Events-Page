@@ -1,6 +1,7 @@
 import Tilt from 'react-parallax-tilt';
 import Registration from './components/Registeration/Registration';
 import EventDescription from './components/EventDescription/EventDescription'
+import './App.css'
 
 function App() {
   return (

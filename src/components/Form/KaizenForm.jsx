@@ -15,6 +15,7 @@ export default class KaizenForm extends React.Component {
                         <h2 className="subtitle" data-aos="fade-up">
                             Registration Form
                         </h2>
+                        <br/>
                         <div className="content" id="bod">
                             <form
                                 className="gform"
@@ -75,7 +76,7 @@ export default class KaizenForm extends React.Component {
                                             College Name*:
                                         </label>
                                         <br />
-                                        <input type="text" name="college name" list="college name" required />
+                                        <input type="text" name="college name" required />
                                     </div>
                                 </fieldset>
                                 <fieldset style={{ placeItems: "center" }}>

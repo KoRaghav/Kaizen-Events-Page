@@ -16,13 +16,13 @@ function App() {
     <div>
 
 
-      <div class="preloader"> <img src={preloader} alt="Image"/>
+      {/* <div class="preloader"> <img src={preloader} alt="Image"/>
         <ul class="text-rotater">
           <li>Hangin there</li>
           <li>Still loading</li>
           <li>Almost done</li>
         </ul>
-      </div>
+      </div> */}
 
 
         

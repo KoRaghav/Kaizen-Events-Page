@@ -1,12 +1,54 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Form.css";
+import {collection, setDoc, doc} from 'firebase/firestore'
+import db from '../Firebase/firebaseConfig'
+
+
 // import Header from "./navbar.jsx";
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import logo from "./kaizen logo.png";
+// import logo from "./kaizen logo.png";
 
 
 export default class KaizenForm extends React.Component {
+    
+    
+    constructor(props) {
+        super(props);
+        this.state = {
+            Name: '',
+            Email: '',
+            Number: '',
+            College: ''
+            
+        };
+
+        this.submit = async () => {  
+            await setDoc(doc(db.db, 'Registrations',`${this.Email}`), {
+                Name: this.Name,
+                Email: this.Email,
+                Number: this.Number,
+                College: this.College
+                });                     
+            this.Name= '';
+            this.Email= '';
+            this.Number= '';
+            this.College= ''; 
+            this.home();
+        }
+        this.handleInputChange = (e) => {
+            const {id , value} = e.target;
+            if(id === "Name"){this.Name = value;}
+            if(id === "Mobile"){this.Number =value;}
+            if(id === "Email"){this.Email = value;}
+            if(id === "College"){this.College = value;}
+        }
+
+
+    }
+
+
+      
     render() {
         return (
             <>
@@ -19,9 +61,8 @@ export default class KaizenForm extends React.Component {
                         <div className="content" id="bod">
                             <form
                                 className="gform"
-                                method="POST"
-                                data-email="anishbanerjee2002@gmail.com"
                                 id="my-form"
+                                onSubmit={(e) => {e.preventDefault(); this.submit();}}
                                 >
                                 <fieldset>
                                     <div class="container">
@@ -35,6 +76,7 @@ export default class KaizenForm extends React.Component {
                                             name="Name"
                                             data-aos="fade-up"
                                             required
+                                            onChange = {(e) => this.handleInputChange(e)}
                                         />
                                     </div>
                                 </fieldset>
@@ -51,6 +93,7 @@ export default class KaizenForm extends React.Component {
                                             data-aos="fade-up"
                                             pattern="[\s]{0,}[+0-9]{10,}[\s]{0,}"
                                             required
+                                            onChange= {(e) => this.handleInputChange(e)}
                                         />
                                     </div>
                                 </fieldset>
@@ -67,6 +110,7 @@ export default class KaizenForm extends React.Component {
                                             pattern="[\s]{0,}[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}[\s]{0,}$"
                                             data-aos="fade-up"
                                             required
+                                            onChange={(e) => this.handleInputChange(e)}
                                         />
                                     </div>
                                 </fieldset>
@@ -76,7 +120,7 @@ export default class KaizenForm extends React.Component {
                                             College Name*:
                                         </label>
                                         <br />
-                                        <input type="text" name="college name" required />
+                                        <input type="text" name="college name" id="College" required onChange={(e) => this.handleInputChange(e)} />
                                     </div>
                                 </fieldset>
                                 <fieldset style={{ placeItems: "center" }}>

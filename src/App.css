@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&display=swap');
+
 body{
   background: #050801;
 }
@@ -11,6 +13,22 @@ body{
 .btn-close:focus{
 	box-shadow: none;
 }
+
+h2 {
+	color: aquamarine;
+	text-align: center;
+	mix-blend-mode: difference;
+	top:4vh;
+	position:fixed;
+	width: 100%;
+	z-index: 3;
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	font-size: 10vw;
+	font-weight: 900;
+	opacity: 0.6;
+
+	
+  }
 
 /*
 

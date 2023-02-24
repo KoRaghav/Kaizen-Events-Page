@@ -25,15 +25,19 @@ function Home() {
     <>
     {alert ? <Alert/> : <></>}
     
-    <div className='reg'>
-      <Registration />
-    </div>
+      <h2>SOCIOPRENEURS</h2>
 
-    <div className='reg'>
-      <Tilt className="each-event" style={{ backgroundColor: "transparent" }}>
-        <EventDescription />
-      </Tilt>
-    </div>
+    <main style={{"margin-top":"40vh"}}>
+      <div className='reg'>
+        <Registration />
+      </div>
+
+      <div className='reg'>
+        <Tilt className="each-event" style={{ backgroundColor: "transparent" }}>
+          <EventDescription />
+        </Tilt>
+      </div>
+    </main>
     </>
   )
 }

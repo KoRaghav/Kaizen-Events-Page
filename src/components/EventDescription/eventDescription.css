@@ -23,12 +23,8 @@
   width: 280px;
   height: 150px;
   left: 10px;
-  background: rgb(255, 0, 99);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 0, 99, 1) 35%,
-    rgba(247, 32, 32, 1) 100%
-  );
+  background: aquamarine;
+
   top: -50px;
   border-radius: 20px;
   box-shadow: 1px 2px 3px #999999;

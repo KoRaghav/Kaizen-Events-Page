@@ -10,7 +10,7 @@ import preloader from './assets/images/preloader.gif';
 import './App.css'
 
 import KaizenForm from './components/Form/KaizenForm';
-import { BrowserRouter as Router, Routes, Route,useParams,useLocation  } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route,useLocation  } from "react-router-dom";
 import Alert from './components/Alert/alert';
 
 

@@ -8,6 +8,9 @@ body{
   align-items: center;
 }
 
+.btn-close:focus{
+	box-shadow: none;
+}
 
 /*
 

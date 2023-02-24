@@ -11,7 +11,7 @@ function Registration() {
 
   return (
     <div>
-        <a onClick={form}>
+        <a class="regi" onClick={form}>
             <span></span>
             <span></span>
             <span></span>

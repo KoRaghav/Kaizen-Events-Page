@@ -24,11 +24,24 @@ function Home() {
   return (
     <>
     {alert ? <Alert/> : <></>}
-    
-      <h2>SOCIOPRENEURS</h2>
-
-    <main style={{"margin-top":"40vh"}}>
-      <div className='reg'>
+      <div class="head pt-5">
+        <h2>SOCIOPRENEURS</h2>
+        <h3>A platform to motivate aspiring social entrepreneurs to develop their ideas and inspire them for social change</h3>
+      </div>
+      <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    <main style={{"position":"relative","bottom":"-40vh"}}>
+      <div className='reg p-3'>
         <Registration />
       </div>
 
@@ -37,6 +50,7 @@ function Home() {
           <EventDescription />
         </Tilt>
       </div>
+      <div style={{minHeight:"100vh"}}></div>
     </main>
     </>
   )

@@ -10,7 +10,7 @@ function Registration() {
   }
 
   return (
-    <div>
+    <div style={{"zIndex":"20"}}>
         <a class="regi" onClick={form}>
             <span></span>
             <span></span>

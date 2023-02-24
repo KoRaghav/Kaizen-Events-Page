@@ -17,7 +17,7 @@ body{
 .head {
 	color: white;
 	text-align: center;
-	position:fixed;
+	position:relative;
 	width: 100%;
 	z-index: 8;
 	font-family: 'IBM Plex Sans Condensed';

@@ -87,3 +87,7 @@ label{
     background-color: darkcyan;
     cursor: pointer;
 }
+
+.subtitle {
+    font-size: 6vh;
+}

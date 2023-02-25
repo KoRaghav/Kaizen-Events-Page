@@ -13,6 +13,7 @@ import KaizenForm from './components/Form/KaizenForm';
 import { BrowserRouter as Router, Routes, Route,useLocation,useNavigate,useParams  } from "react-router-dom";
 import Alert from './components/Alert/alert';
 import { events } from './Events/events';
+import RegisterButton from './components/RegisterButton/registerButton'
 
 function Home() {
   const {state} = useLocation();
@@ -48,12 +49,12 @@ function Home() {
       </ul>
     <main style={{"position":"relative"}}>
       
-      <div className="events-container row p-5">
-        {ev.map((data, key) => {console.log(data[0]);return(
+      <div className="events-container row p-5 justify-content-center">
+        {ev.map((data, key) => {return(
 
-          <div class="event col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 p-4" id={data[0]}>
+          <div class="event col-xl-4 col-lg-4 col-md-4 col-sm-6 col-10 p-4" id={data[0]}>
                 <Tilt style={{ backgroundColor: "transparent" }}>
-                  <a onClick={()=>event(data[0])}><img src={data[1].image}/></a>
+                  <a onClick={()=>event(data[0])} style={{cursor: "pointer"}}><img src={data[1].image}/></a>
                 </Tilt>
           </div>
           
@@ -93,11 +94,12 @@ function Event() {
     <main style={{"position":"relative"}}>
 
       <div class="row justify-content-center p-3">
-        <div class="col-xl-5 col-lg-5 col-md-7 col-sm-8 col-12 pb-2">
-          <img src={image} class="p-5"/>
+        <div class="col-xl-5 col-lg-5 col-md-7 col-sm-8 col-12">
+          <img src={image} class="px-5 py-3"/>
         </div>
-        <div className='reg col-xl-7 col-lg-7 col-md-5 col-sm-12 col-12 pt-4'>
-          <Tilt className="each-event" style={{ backgroundColor: "transparent" }}>
+        <div className='reg col-xl-7 col-lg-7 col-md-5 col-sm-12 col-12 pt-3 flex-column'>
+          <div class="py-5"><RegisterButton id={id}/></div>
+          <Tilt className="each-event pt-5" style={{ backgroundColor: "transparent" }}>
             <EventDescription />
           </Tilt>
         </div>
@@ -128,7 +130,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/form" element={<KaizenForm />} />
+          <Route path="/form/:id" element={<KaizenForm />} />
           <Route path=":id" element={<Event/>} />
         </Routes>
       </Router>

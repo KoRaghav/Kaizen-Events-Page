@@ -1,0 +1,61 @@
+
+.btn-anim {
+    position: relative;
+    margin: auto;
+    width: 200px;
+    line-height: 90px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    background: transparent;
+    transition: all .3s;
+    cursor: pointer;
+    border: none;
+}
+.btn-anim:hover {
+        background: aquamarine;
+        color: black;
+        filter: contrast(1.1);
+    }
+    
+.btn-anim:active {
+        filter: contrast(0.9);
+    }
+    
+.btn-anim::before,
+.btn-anim::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        border: 2px solid aquamarine;
+        transition: all .5s;
+        animation: clippath 3s infinite linear;
+        border-radius: 10px;
+    }
+    
+.btn-anim::after {
+        animation: clippath 3s infinite -1.5s linear;
+    }
+
+
+@keyframes clippath {
+    0%,
+    100% {
+        clip-path: inset(0 0 98% 0);
+    }
+    
+    25% {
+        clip-path: inset(0 98% 0 0);
+    }
+    50% {
+        clip-path: inset(98% 0 0 0);
+    }
+    75% {
+        clip-path: inset(0 0 0 98%);
+    }
+}
+

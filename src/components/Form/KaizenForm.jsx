@@ -2,7 +2,8 @@ import React, {useState} from "react";
 import "./Form.css";
 import {collection, setDoc, doc} from 'firebase/firestore'
 import db from '../Firebase/firebaseConfig'
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import {events} from '../../Events/events'
 
 // import Header from "./navbar.jsx";
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -11,7 +12,9 @@ import { useNavigate } from "react-router-dom";
 
 
 export default function KaizenForm () {
- 
+    const { id } = useParams(); 
+    console.log(id)
+
     const [Name, setName] = useState('')
     const [Email, setEmail] = useState('')
     const [Number, setNumber] = useState('')
@@ -24,7 +27,7 @@ export default function KaizenForm () {
     }
 
     const submit = async () => {  
-        await setDoc(doc(db.db, 'Registrations',`${Email}`), {
+        await setDoc(doc(db.db, id,`${Email}`), {
             'Name': Name,
             'Email': Email,
             'Number': Number,
@@ -55,7 +58,7 @@ export default function KaizenForm () {
             <section className="wrapper" id="formSec">
                 <div className="formDiv">
                     <h2 className="subtitle" data-aos="fade-up">
-                        Registration Form
+                        Register For {events[`${id}`]['title']}
                     </h2>
                     <br/>
                     <div className="content" id="bod">

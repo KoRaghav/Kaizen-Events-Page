@@ -5,7 +5,8 @@ import EventDescription from './components/EventDescription/EventDescription'
 
 import Registration from './components/Registration/Registration'
 import preloader from './assets/images/preloader.gif';
-
+import { scroller } from "react-scroll";
+import Navbar from './components/Navbar/navbar';
 
 import './App.css'
 
@@ -14,107 +15,15 @@ import { BrowserRouter as Router, Routes, Route,useLocation,useNavigate,useParam
 import Alert from './components/Alert/alert';
 import { events } from './Events/events';
 import RegisterButton from './components/RegisterButton/registerButton'
-
-function Home() {
-  const {state} = useLocation();
-  const ev = Array.from(Object.entries(events))
-  var alert=false;
-  if (state) {alert = state.alert;}
-  else {alert = false;}
-  
-  let navigate = useNavigate(); 
-  const event = (id) =>{ 
-    let path = `/${id}`; 
-    navigate(path);
-  }
-
-  return (
-    <>
-      <div class="head">
-        {alert ? <Alert/> : <></>}
-        <h2 class="pt-2">EVENTS</h2>
-
-      </div>
-      <ul class="background">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    <main style={{"position":"relative"}}>
-      
-      <div className="events-container row p-5 justify-content-center">
-        {ev.map((data, key) => {return(
-
-          <div class="event col-xl-4 col-lg-4 col-md-4 col-sm-6 col-10 p-4" id={data[0]}>
-                <Tilt style={{ backgroundColor: "transparent" }}>
-                  <a onClick={()=>event(data[0])} style={{cursor: "pointer"}}><img src={data[1].image}/></a>
-                </Tilt>
-          </div>
-          
-        );})}
-      </div>
-    </main>
-    </>
-  )
-}
-
-function Event() {
-  const { id } = useParams();
-
-  const ev = events[`${id}`]
-  const title = ev["title"];
-  const image = ev["image"];
-  const description = ev["description"];
-
-  return (
-    <>
-      <div class="head pt-5">
-        <h2>{title}</h2>
-        <h3>{description}</h3>
-      </div>
-      <ul class="background">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    <main style={{"position":"relative"}}>
-
-      <div class="row justify-content-center p-3">
-        <div class="col-xl-5 col-lg-5 col-md-7 col-sm-8 col-12">
-          <img src={image} class="px-5 py-3"/>
-        </div>
-        <div className='reg col-xl-7 col-lg-7 col-md-5 col-sm-12 col-12 pt-3 flex-column'>
-          <div class="py-5"><RegisterButton id={id}/></div>
-          <Tilt className="each-event pt-5" style={{ backgroundColor: "transparent" }}>
-            <EventDescription />
-          </Tilt>
-        </div>
-      </div>
-    </main>
-    </>
-  )
-}
-
+import Home from './components/Home/home'
+import EventPage from './components/EventPage/eventPage'
 
 function App() {
 
 
   return (
     <div>
+      <Navbar/>
 
     
       <div class="preloader"> <img src={preloader} alt="Image"/>
@@ -131,7 +40,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/form/:id" element={<KaizenForm />} />
-          <Route path=":id" element={<Event/>} />
+          <Route path=":id" element={<EventPage/>} />
         </Routes>
       </Router>
 

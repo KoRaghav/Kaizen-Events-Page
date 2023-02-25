@@ -17,8 +17,10 @@ export default function Event() {
   const { id } = useParams();
 
   const ev = events[`${id}`]
+  const date = ev["date"];
   const title = ev["title"];
   const image = ev["image"];
+  const content = ev["content"];
   const description = ev["description"];
 
   return (
@@ -43,12 +45,13 @@ export default function Event() {
 
       <div class="row justify-content-center p-3">
         <div class="col-xl-5 col-lg-5 col-md-7 col-sm-8 col-12">
-          <img src={image} class="px-5 py-3"/>
+          <img src={image} class="p-3" style={{"border-radius":"40px"}}/>
         </div>
-        <div className='reg col-xl-7 col-lg-7 col-md-5 col-sm-12 col-12 pt-3 flex-column'>
-          <div class="py-5"><RegisterButton id={id}/></div>
+        <div className='reg col-xl-6 col-lg-6 col-md-5 col-sm-12 col-12 flex-column'>
+          <div class="pb-5 pt-3"><RegisterButton id={id}/></div>
+          <h3 class="py-5 px-3 text-center" style={{"color":"white"}}>{date}</h3>
           <Tilt className="each-event pt-5" style={{ backgroundColor: "transparent" }}>
-            <EventDescription />
+            <EventDescription title={title} content={content}/>
           </Tilt>
         </div>
       </div>

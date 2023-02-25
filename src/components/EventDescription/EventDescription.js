@@ -2,19 +2,16 @@ import React from 'react';
 
 import './eventDescription.css';
 
-function EventDescription() {
+function EventDescription({title,content}) {
   return ( 
     
         <div class="card">
             <div class="title">
-              Lorem Ipsum
+              {title}
             </div>
             <div class="content">
 
-              <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat libero sit amet quam fermentum venenatis
-                  Lorem ipsum dolor sit amet, consectetur
-              </p>
+              <p>{content}</p>
             </div>
         </div>
     

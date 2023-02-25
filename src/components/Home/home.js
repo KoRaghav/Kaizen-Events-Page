@@ -55,7 +55,7 @@ export default function Home() {
 
           <div class="event col-xl-4 col-lg-4 col-md-4 col-sm-6 col-10 p-4" id={data[0]}>
                 <Tilt style={{ backgroundColor: "transparent" }}>
-                  <a onClick={()=>event(data[0])} style={{cursor: "pointer"}}><img src={data[1].image}/></a>
+                  <img src={data[1].image} onClick={()=>event(data[0])} style={{cursor: "pointer","border-radius":"15px"}}/>
                 </Tilt>
           </div>
           

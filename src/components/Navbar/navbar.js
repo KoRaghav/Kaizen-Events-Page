@@ -6,7 +6,7 @@ export default function Navbar() {
           <nav class="navbar navbar-expand">
             <div class="container-fluid">
               <div class="float-left px-3">                
-                <a href="https://www.kaizeniitd.in/" class="nav-link"><img width={40} class="logo" alt="Kaizen" src={logo}/></a>
+                <a href="https://www.kaizeniitd.in/"><img width={40} class="logo" alt="Kaizen" src={logo}/></a>
               </div>
 
 

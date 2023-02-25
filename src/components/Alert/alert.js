@@ -8,8 +8,8 @@ export default function Alert () {
     }
     return (
         <center>
-        <div class="alert alert-success alert-dismissible fade show" role="alert" style={{"border-radius":"0px"}}>
-          <strong>Registered Successfully!</strong> Check out more events below
+        <div class="alert alert-success alert-dismissible fade show" role="alert" style={{"border-radius":"0px","font-size":"18px"}}>
+          <strong style={{}}>Registered Successfully!</strong> Check out more events below
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" onClick={home}></button>
         </div>
       </center>

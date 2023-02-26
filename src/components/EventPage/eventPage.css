@@ -120,7 +120,7 @@ body{
 	mix-blend-mode: difference;	
 	color: white;
     letter-spacing: 15px;
-
+    word-wrap: break-word;
   }
 
 

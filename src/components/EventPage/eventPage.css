@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 .image{
     height: max-content;
@@ -115,7 +115,7 @@ body{
 	width: 100%;
 	z-index: 8;
 	font-family: 'IBM Plex Sans Condensed';
-	font-size: 8vw;
+	font-size: 7vw;
 	font-weight: 900;
 	mix-blend-mode: difference;	
 	color: white;

@@ -5,7 +5,6 @@ import './eventPage.css'
 import { useParams } from "react-router-dom";
 import { events } from '../../Events/events';
 import RegisterButton from '../RegisterButton/registerButton'
-import calEv from '../../assets/svgs/calendar-event.svg'
 
 export default function Event() {
   const { id } = useParams();

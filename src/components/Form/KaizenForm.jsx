@@ -4,7 +4,7 @@ import {collection, setDoc, doc} from 'firebase/firestore'
 import db from '../Firebase/firebaseConfig'
 import { useNavigate, useParams } from "react-router-dom";
 import {events} from '../../Events/events'
-import { scroller } from "react-scroll";
+import { scroller,animateScroll } from "react-scroll";
 
 // import Header from "./navbar.jsx";
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -25,10 +25,7 @@ export default function KaizenForm () {
     const home = async () =>{ 
       let path = `/`; 
       await navigate(path,{ state: { alert:true } });
-      await scroller.scrollTo('head', {
-        duration: 1500,
-        offset: 0,
-      });      
+      await animateScroll.scrollToTop()      
     }
 
     const submit = async () => {  

@@ -3,7 +3,6 @@ import Tilt from 'react-parallax-tilt'
 
 import EventDescription from '../EventDescription/EventDescription'
 
-import Registration from '../Registration/Registration'
 import { scroller } from "react-scroll";
 
 import './eventPage.css'
@@ -97,7 +96,7 @@ export default function Event() {
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 p-4">
                             <Tilt className="Card p-4 mx-auto">
                                 <img style={{"border-radius":"50%","height":"80px"}} src={card.picture} />
-                                <h3 class="pt-3">{card.title}</h3>
+                                <h3 class="py-3 px-3" style={{"font-family": "Lobster, cursive","font-size":"25px"}}>{card.title}</h3>
                                 <h4 class="pt-3 px-3" style={{"font-size":"20px"}}>{card.subtitle}</h4>
                             </Tilt>   
                         </div>

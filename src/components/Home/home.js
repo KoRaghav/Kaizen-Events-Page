@@ -8,7 +8,7 @@ import Navbar from '../Navbar/navbar';
 import './home.css'
 
 import { BrowserRouter as Router, Routes, Route,useLocation,useNavigate,useParams  } from "react-router-dom";
-import Alert from '../Alert/alert';
+// import Alert from '../Alert/alert';
 import { events } from '../../Events/events';
 
 
@@ -31,8 +31,15 @@ export default function Home() {
 
   return (
     <>
-      <div class="head">
-        {alert ? <Alert/> : <></>}
+      <div class="head" id="head">
+        {alert ? 
+          <center>
+            <div class="alert alert-success alert-dismissible fade show" role="alert" style={{"border-radius":"0px","font-size":"18px"}}>
+              <strong style={{}}>Registered Successfully!</strong> Check out more events below
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" onClick={alert=false}></button>
+            </div>
+          </center>        
+        : <></>}
         <h2 class="pt-2 Title">EVENTS</h2>
 
       </div>

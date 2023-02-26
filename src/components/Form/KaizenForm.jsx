@@ -22,10 +22,9 @@ export default function KaizenForm () {
     const [College, setCollege] = useState('')    
     
     let navigate = useNavigate(); 
-    const home = async () =>{ 
-      let path = `/`; 
-      await navigate(path,{ state: { alert:true } });
-      await animateScroll.scrollToTop()      
+    const home = () =>{ 
+      let path = `/registersuccess`; 
+      navigate(path,{ state: { alert:true } }); 
     }
 
     const submit = async () => {  
@@ -57,7 +56,7 @@ export default function KaizenForm () {
 
     return (
         <>
-            <section className="wrapper" id="formSec">
+            <section className="wrapper text-center" id="formSec">
                 <div className="formDiv">
                     <h2 className="subtitle" data-aos="fade-up">
                         Register For {events[`${id}`]['title']}

@@ -4,7 +4,7 @@ import './eventDescription.css';
 
 function EventDescription({title,content}) {
   return ( 
-    
+      <div class="Hov">
         <div class="card">
             <div class="title">
               {title}
@@ -14,6 +14,8 @@ function EventDescription({title,content}) {
               <p>{content}</p>
             </div>
         </div>
+            <div class="Dummy"></div>
+      </div>
     
   )
 }

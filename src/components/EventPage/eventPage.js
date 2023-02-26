@@ -77,7 +77,7 @@ export default function Event() {
                 {` ${venue}, `}
               </h3>
             </div>
-            <Tilt className="each-event pt-5" style={{ backgroundColor: "transparent" }}>
+            <Tilt className="each-event pt-5 mt-5" style={{ backgroundColor: "transparent" }}>
               <EventDescription title={title} content={content} />
             </Tilt>
           </div>

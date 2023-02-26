@@ -196,7 +196,7 @@ export const events =
             "date": "18th April",
             "time": "6:45pm - 8:45pm",
             "venue": "Seminar Hall, and Live Streaming on Zoom",
-            "content": "A pan-India virtual science exhibition, providing the students a platform to develop efcient solutions to the problems existing in the society by creating innovative science models",
+            "content": "A pan-India virtual science exhibition, providing the students a platform to develop effcient solutions to the problems existing in the society by creating innovative science models",
             
             "sections": [
                 {"type": "PTS",

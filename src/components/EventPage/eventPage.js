@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Tilt from 'react-parallax-tilt'
-
 import EventDescription from '../EventDescription/EventDescription'
 
 import Registration from '../Registration/Registration'
@@ -21,6 +20,7 @@ export default function Event() {
   const title = ev["title"];
   const image = ev["image"];
   const content = ev["content"];
+  const sections = ev["sections"];
   const description = ev["description"];
 
   return (
@@ -65,6 +65,54 @@ export default function Event() {
           </div>
         </div>
       </main>
+
+      <div className="sections-container">
+        {sections.map((data, key) => {
+          
+          if (data.type==="TS"){
+            return(
+              <div class="pt-5 text-center" style={{"color":"white"}}>
+                <div class="row py-4 px-3 justify-content-center text-center">
+                <h2 style={{"color":'aquamarine',"position":"relative"}}>{data.title}</h2>
+                    {data.data.map((card, key2) => { return (
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 p-4">
+                            <Tilt className="Card p-4 mx-auto">
+                                <h3 class="pt-3">{card.title}</h3>
+                                <h4 class="pt-5 px-3" style={{"font-size":"20px"}}>{card.subtitle}</h4>
+                            </Tilt>   
+                        </div>
+                    );}
+                    )}  
+                </div>         
+              </div>          
+            );
+          }
+          else if (data.type==="PTS"){
+            return(
+              <div class="pt-5 text-center" style={{"color":"white"}}>
+                <div class="row py-4 justify-content-center text-center">
+                <h2 style={{"color":'aquamarine',"position":"relative"}}>PRIZES</h2>
+                    {data.data.map((card, key2) => { return (
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 p-4">
+                            <Tilt className="parallax-effect" perspective={1000}>
+                              <div className="inner-element Card p-4 mx-auto ">
+                                <img style={{"border-radius":"50%","height":"80px"}} src={card.picture} />
+                                <h3 class="pt-3">{card.title}</h3>
+                                <h4 class="pt-3 px-3" style={{"font-size":"20px"}}>{card.subtitle}</h4>
+                              </div>
+                            </Tilt>   
+                        </div>
+                    );}
+                    )}  
+                </div>         
+              </div>          
+            );
+          }
+          
+
+        })}
+      </div>
+
     </>
   )
 }

@@ -5,7 +5,7 @@ import preloader from '../../assets/images/preloader.gif'
 
 export default function Loading() {
   return (
-    <div class="preloader"> <img src={preloader} alt="Image"/>
+    <div class="preloader"> <img class="loader" src={preloader} alt="Image"/>
     <ul class="text-rotater">
     <li>Hangin there</li>
     <li>Still loading</li>

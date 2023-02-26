@@ -45,14 +45,17 @@ export default function Event() {
 
         <div class="row justify-content-center p-3">
           <div class="col-xl-5 col-lg-5 col-md-7 col-sm-8 col-12">
-            <div class="image">
+            
+            <div class="image mx-auto">
               <div class="up"></div>
-              <div class="border">
+              <div class="Border">
                 <img src={image} class="p3" />
               </div>
               <div class="down"></div>
             </div>
+
           </div>
+
           <div className='reg col-xl-6 col-lg-6 col-md-5 col-sm-12 col-12 flex-column'>
             <div class="pb-5 pt-3"><RegisterButton id={id} /></div>
             <h3 class="py-5 px-3 text-center" style={{ "color": "white" }}>{date}</h3>

@@ -43,7 +43,7 @@ export default function Home() {
       <div className="events-container row p-5 justify-content-center">
         {ev.map((data, key) => {return(
 
-          <div class="event col-xl-4 col-lg-4 col-md-4 col-sm-6 col-10 p-4" id={data[0]}>
+          <div class="event col-xl-4 col-lg-5 col-md-6 col-sm-10 col-11 px-5 py-3" id={data[0]}>
                 <Tilt style={{ backgroundColor: "transparent" }}>
                   <img src={data[1].image} onClick={()=>event(data[0])} style={{cursor: "pointer","border-radius":"15px"}}/>
                 </Tilt>

@@ -37,7 +37,7 @@ export default function Event() {
         <li></li>
         <li></li>
       </ul>
-      <main style={{ "position": "relative" }}>
+      <main style={{ "position": "relative" }} class="pt-5">
 
         <div class="row justify-content-center p-3">
           <div class="col-xl-5 col-lg-5 col-md-7 col-sm-8 col-12">

@@ -48,12 +48,6 @@ export default function KaizenForm () {
         if(id === "College"){setCollege(value);}
     }
 
-
-    
-
-
-      
-
     return (
         <>
             <section className="wrapper text-center" id="formSec">

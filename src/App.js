@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Home from './components/Home/home'
 import EventPage from './components/EventPage/eventPage'
 import RegisterSuccess from './components/Form/RegisterSuccess';
+import Footer from './components/Footer/footer'
 import './App.css'
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
         </Routes>
       </Router>
 
-
+      <Footer/>
     </div>
   );
 }

@@ -27,7 +27,7 @@ body{
 	position:relative;
 	z-index: 8;
 	font-family: 'IBM Plex Sans Condensed';
-	font-size: 7vw;
+	font-size: 50px;
 	font-weight: 900;
 	mix-blend-mode: difference;	
     letter-spacing: 15px;

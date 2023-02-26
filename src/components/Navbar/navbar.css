@@ -11,8 +11,8 @@
 
 
 .header {
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);    
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);    
     background-color: transparent;
     top: 0;
     left:0;

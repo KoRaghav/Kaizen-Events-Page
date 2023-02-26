@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&display=swap');
 
 body{
-  background: #050801;
+  background: #152238;
 }
 
 .reg{
@@ -64,7 +64,7 @@ body{
     width: 20px;
     height: 20px;
     background: rgba(255, 255, 255, 0.2);
-    animation: animate 19s linear infinite;
+    animation: animate 2s linear infinite;
 }
 
 
@@ -75,7 +75,7 @@ body{
     width: 191px;
     height: 191px;
     bottom: -191px;
-    animation-delay: 1s;
+    animation-delay: 0s;
 }
 .background li:nth-child(1) {
     left: 55%;
@@ -96,49 +96,49 @@ body{
     width: 153px;
     height: 153px;
     bottom: -153px;
-    animation-delay: 1s;
+    animation-delay: 9s;
 }
 .background li:nth-child(4) {
     left: 86%;
     width: 168px;
     height: 168px;
     bottom: -168px;
-    animation-delay: 19s;
+    animation-delay: 7s;
 }
 .background li:nth-child(5) {
     left: 19%;
     width: 131px;
     height: 131px;
     bottom: -131px;
-    animation-delay: 10s;
+    animation-delay: 6s;
 }
 .background li:nth-child(6) {
     left: 82%;
     width: 100px;
     height: 100px;
     bottom: -100px;
-    animation-delay: 27s;
+    animation-delay: 4s;
 }
 .background li:nth-child(7) {
     left: 48%;
     width: 134px;
     height: 134px;
     bottom: -134px;
-    animation-delay: 24s;
+    animation-delay: 15s;
 }
 .background li:nth-child(8) {
     left: 4%;
     width: 195px;
     height: 195px;
     bottom: -195px;
-    animation-delay: 1s;
+    animation-delay: 3s;
 }
 .background li:nth-child(9) {
     left: 3%;
     width: 149px;
     height: 149px;
     bottom: -149px;
-    animation-delay: 44s;
+    animation-delay: 10s;
 }
 
 

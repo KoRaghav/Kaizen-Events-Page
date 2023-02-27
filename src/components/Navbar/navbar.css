@@ -28,7 +28,7 @@
     font-size: 15px;    
 }
 
-.nav-link:hover {
+.navbar .nav-link:hover {
     transition: ease-in-out 0.1s;
     border-bottom: 1px solid cyan;
     color: white;

@@ -39,22 +39,22 @@ export default function Footer(){
             </div>
             <div class="reach-socials">
             <a href="https://www.facebook.com/NSSIITDelhi" target="blank">
-                <img alt="FB" src={fb} />
+                <img alt="FB" src={fb} style={{"max-width":"100%"}}/>
             </a>
             <a href="https://www.linkedin.com/company/nss-iit-delhi/?originalSubdomain=in" target="blank">
-                <img alt="LIN" src={linkedin} />
+                <img alt="LIN" src={linkedin} style={{"max-width":"100%"}}/>
             </a>
             <a href="https://www.instagram.com/nssiitd/?hl=en" target="blank">
-                <img alt="INST" src={insta} />
+                <img alt="INST" src={insta} style={{"max-width":"100%"}}/>
             </a>
             <a href="https://www.youtube.com/channel/UC3nq2Tsw8eruu22-MBr2_ow" target="blank">
-                <img alt="yt" src={yt} />
+                <img alt="yt" src={yt} style={{"max-width":"100%"}}/>
             </a>
             <a href="https://mobile.twitter.com/nss_iitd" target="blank">
-                <img alt="TWITTER" src={twitter} />
+                <img alt="TWITTER" src={twitter} style={{"max-width":"100%"}}/>
             </a>
             <a href="http://nss.iitd.ac.in/#!/" target="blank">
-                <img alt="FB" src={web}/>
+                <img alt="FB" src={web} style={{"max-width":"100%"}}/>
             </a>
             </div>
         </div>

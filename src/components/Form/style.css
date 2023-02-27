@@ -36,26 +36,10 @@
   }
 }
 
-.cap {
-  padding-top:10rem;
-  align-self: center;
-  animation: fadeInUp;
-  animation-duration: 1.5s;  
-}
-
 .navbar {
   transition: all 0.4s ease-in-out;
 }
 
-body {
-  overflow-x: hidden;
-  margin: 0;
-  background-color: #28282b;  
-}
-
-.head {
-  min-height: 100vh;
-}
 
 .header {
   background-color: transparent;

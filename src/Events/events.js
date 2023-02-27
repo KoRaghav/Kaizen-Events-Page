@@ -40,6 +40,8 @@ export const events =
             "time": "6:45pm - 8:45pm",
             "venue": "Seminar Hall, and Live Streaming on Zoom",
             "content": "B-plan event to provide a platform to aspiring social entrepreneurs. It aims to encourage change-makers provide them mentorship from renowned experts.",
+            "rank":"10",
+            "category":"competition",
 
             "sections": [
                {"type": "TS",
@@ -76,6 +78,10 @@ export const events =
             "time": "6:45pm - 8:45pm",
             "venue": "Seminar Hall, and Live Streaming on Zoom",
             "content": "Knowledge and delight converge in Aurora - the inaugural ceremony of Kaizen '22, studded with esteemed guests and making way for change to happen.",
+            "rank":"9",
+            "category":"competition",
+
+
             
             "sections": [
                {"type": "TS",
@@ -101,6 +107,10 @@ export const events =
             "time": "6:45pm - 8:45pm",
             "venue": "Seminar Hall, and Live Streaming on Zoom",
             "content": "Drama competition for the movie buffs who are tired of troublesome depictions shown in movies, giving them an opportunity to present their perfect story, in the form of a 5-minute-Act!",
+            "rank":"8",
+            "category":"competition",
+
+
             
             "sections": [
                {"type": "TS",
@@ -125,6 +135,10 @@ export const events =
             "time": "6:45pm - 8:45pm",
             "venue": "Seminar Hall, and Live Streaming on Zoom",
             "content": "A platform for all the young comedians out there to tickle the audience with their greatest comic skills and shoot their punchlines on the social issues around. Be the source of all the guffaws and chuckles to become the best of them all.",
+            "rank":"2",
+            "category":"workshop",
+
+
             
             "sections": [
                {"type": "TS",
@@ -149,6 +163,10 @@ export const events =
             "time": "6:45pm - 8:45pm",
             "venue": "Seminar Hall, and Live Streaming on Zoom",
             "content": "A design sprint hackathon aimed to devise technical scalable solutions for burning social nodus persisting in society.",
+            "rank":"6",
+            "category":"lecture",
+
+
             
             "sections": [
                {"type": "TS",
@@ -173,6 +191,10 @@ export const events =
             "time": "6:45pm - 8:45pm",
             "venue": "Seminar Hall, and Live Streaming on Zoom",
             "content": "It emulates a courtroom and captures the thrill of a real court hearing, to raise awareness on common laws to protect oneself with!",
+            "rank":"1",
+            "category":"workshop",
+
+
             
             "sections": [
                {"type": "TS",
@@ -197,6 +219,10 @@ export const events =
             "time": "6:45pm - 8:45pm",
             "venue": "Seminar Hall, and Live Streaming on Zoom",
             "content": "A pan-India virtual science exhibition, providing the students a platform to develop effcient solutions to the problems existing in the society by creating innovative science models",
+            "rank":"4",
+            "category":"lecture",
+
+
             
             "sections": [
                 {"type": "PTS",

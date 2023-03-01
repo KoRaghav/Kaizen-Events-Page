@@ -21,7 +21,7 @@
 
 
 input {
-    width: 60vw;
+    width: 30vw;
     padding: 8px;
     border-radius: 10px;
     border:1.5px solid aquamarine;
@@ -49,6 +49,9 @@ fieldset {
     }
     .formDiv{
         max-width: 768px;
+    }
+    input{
+        width:80vw;
     }
 }
 

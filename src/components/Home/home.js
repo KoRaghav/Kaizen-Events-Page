@@ -4,7 +4,7 @@ import { scroller } from "react-scroll";
 import {useNavigate} from "react-router-dom";
 import { events } from '../../Events/events';
 import './home.css'
-
+import Background from '../background/background';
 
 
 
@@ -48,23 +48,12 @@ export default function Home() {
 
   return (
     <>
+    <Background />
       <div class="head" id="head">
         <h2 class="pt-2 Title">EVENTS</h2>        
       </div>
 
 
-      <ul class="background">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
     <main style={{"position":"relative"}}>
       
       <ul class="nav nav-pills mb-3 p-3 justify-content-center" id="pills-tab" role="tablist">

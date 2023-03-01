@@ -5,6 +5,8 @@ import './eventPage.css'
 import { useParams } from "react-router-dom";
 import { events } from '../../Events/events';
 import RegisterButton from '../RegisterButton/registerButton'
+import Background from '../background/background';
+
 
 export default function Event() {
   const { id } = useParams();
@@ -21,22 +23,12 @@ export default function Event() {
 
   return (
     <>
+      <Background/>
       <div class="head" id="head">
         <h2 class="Title">{title}</h2>
         <h3 class="px-5" style={{ "color": "#bbbbbb", "font-weight": "900" }}>{description}</h3>
       </div>
-      <ul class="background">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+
       <main style={{ "position": "relative" }} class="pt-5">
 
         <div class="row justify-content-center p-3">

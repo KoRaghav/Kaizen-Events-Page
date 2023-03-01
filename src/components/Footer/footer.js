@@ -16,9 +16,8 @@ export default function Footer(){
             <img src={kaizen} alt=""/>
             </div>
             <p class="kaizen-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia facilis consectetur temporibus asperiores
-            eius quae dolor beatae non dolorum. Mollitia quas est obcaecati, impedit earum cum! Recusandae, provident
-            quos? Eveniet?
+            
+            Kaizen, the social fest of IIT Delhi, is aimed at sensitizing society about the potential of our contributions to creating an actual impact through flagship events spanning the domains of education, environment, healthcare, and many more.
             </p>
 
         </div>

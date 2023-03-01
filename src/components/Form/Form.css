@@ -13,10 +13,14 @@
 .formDiv {
     display: grid;
     place-items: center;
+    padding:4rem 2rem;
+    opacity:0.8;
     /* max-width: 768px; */
     /* font-size: medium; */
     margin: auto;
-    width:80vw;
+    width:45vw;
+    background-color: black;
+    border: 2px solid aquamarine
 }
 
 
@@ -49,13 +53,15 @@ fieldset {
     }
     .formDiv{
         max-width: 768px;
+        width:80vw;
     }
     input{
-        width:80vw;
+        width:60vw;
     }
 }
 
 label{
+    font-family: Arial, Helvetica, sans-serif;
     color:aquamarine;
 }
 

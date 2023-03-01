@@ -10,9 +10,10 @@ import { scroller,animateScroll } from "react-scroll";
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // import logo from "./kaizen logo.png";
-
+import Background from "../background/background";
 
 export default function KaizenForm () {
+
     const { id } = useParams(); 
     console.log(id)
 
@@ -50,6 +51,7 @@ export default function KaizenForm () {
 
     return (
         <>
+        <Background/>
             <section className="wrapper text-center" id="formSec">
                 <div className="formDiv">
                     <h2 className="subtitle" data-aos="fade-up">
